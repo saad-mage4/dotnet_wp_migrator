@@ -50,6 +50,9 @@
               showConfirmButton: false,
               timer: 2000,
               allowOutsideClick: false,
+              willClose: () =>{
+                location.reload();
+              }
             });
           } else {
             console.log("Error: " + response.data.message);
